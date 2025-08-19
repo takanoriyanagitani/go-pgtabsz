@@ -1,0 +1,26 @@
+version: "2"
+
+linters:
+  default: all
+  disable:
+    - wsl
+    - wsl_v5
+    - wrapcheck
+    - varnamelen
+    - staticcheck
+    - revive
+    - nlreturn
+    - depguard
+    - nonamedreturns
+    - gochecknoglobals
+    - exhaustruct
+    - forbidigo
+    - noinlineerr
+    - mnd
+    - ireturn
+    - gosec
+    - funcorder
+    - err113
+  exclusions:
+    paths:
+    - (.+)_test\.go
